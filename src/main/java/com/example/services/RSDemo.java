@@ -13,7 +13,7 @@ public class RSDemo {
 
     @GET
     public String get() {
-        return "RSDemo";
+        return "alo alo";
     }
 
 }
