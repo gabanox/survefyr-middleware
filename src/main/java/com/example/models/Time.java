@@ -14,6 +14,7 @@ public class Time {
     private final int hour;
     private final int minute;
     private final int second;
+    private final String msg;
 
     public Time() {
         this(TimeZone.getDefault());
@@ -29,6 +30,7 @@ public class Time {
         this.hour = now.get(Calendar.HOUR);
         this.minute = now.get(Calendar.MINUTE);
         this.second = now.get(Calendar.SECOND);
+        this.msg = "hello";
     }
 
     public String getTimezone() {
@@ -58,4 +60,8 @@ public class Time {
     public int getSecond() {
         return second;
     }
+
+	public String getMsg() {
+		return msg;
+	}
 }
