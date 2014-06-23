@@ -71,7 +71,7 @@ public class SurvefyrServices {
     	qi.setValue("value 2");
     	questionItems.add(qiS2);
     	questionItems.add(qi2S2);
-    	q1.setQuestionItems(questionItems);
+    	q1.setQuestionItems(questionItemsS2);
     	Question q2S2 = new Question();
     	q1.setQuestionDescription("Question Description 2");
     	List<QuestionItem> questionItems2S2 = new ArrayList<QuestionItem>();
