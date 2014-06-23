@@ -3,10 +3,10 @@
  */
 package com.survefyr.model.data;
 
-/**
- * @author GC
- *
- */
+import javax.xml.bind.annotation.XmlRootElement;
+
+
+@XmlRootElement
 public class QuestionItem {
 	
 	private String value;
