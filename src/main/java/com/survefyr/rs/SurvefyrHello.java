@@ -14,7 +14,7 @@ import com.survefyr.model.data.QuestionItem;
 public class SurvefyrHello {
 	final private String helloJSON = "{'name'='Survefyr','message'='Hello, lets Surveyyyy :)'}";
     @GET
-    public String get() {
+    public QuestionItem get() {
         return new QuestionItem();
     }
 
