@@ -5,9 +5,11 @@ package com.survefyr.rs;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 
 import com.survefyr.model.data.Question;
@@ -18,8 +20,12 @@ import com.survefyr.model.data.Survey;
 @Produces(MediaType.APPLICATION_JSON)
 public class SurvefyrServices {
 	final private String helloJSON = "{'name'='Survefyr','message'='Hello, lets Surveyyyy :)'}";
-    @GET
+	@Context
+	  private HttpServletResponse anotherServlerResponse;
+	
+	@GET
     public List<Survey> get() {
+		anotherServlerResponse.addHeader("Access-Control-Allow-Origin", "*");
     	List<Survey> surveys = new ArrayList<Survey>();
     	Survey s = new Survey();
     	s.setAplicant("Aplicant 1");
