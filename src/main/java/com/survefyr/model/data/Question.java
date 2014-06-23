@@ -31,5 +31,11 @@ public class Question {
 	public void setQuestionItems(List<QuestionItem> questionItems) {
 		this.questionItems = questionItems;
 	}
+	private List<QuestionItem> getSelectedQuestionItems() {
+		return selectedQuestionItems;
+	}
+	private void setSelectedQuestionItems(List<QuestionItem> selectedQuestionItems) {
+		this.selectedQuestionItems = selectedQuestionItems;
+	}
 	
 }
