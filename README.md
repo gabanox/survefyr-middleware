@@ -12,3 +12,17 @@ Then run it with:
 
     $ java -cp target/classes:target/dependency/* com.example.Main
 
+
+# RESTFULL API 
+
+# API #
+
+Documentación de la API
+
+| Recurso   		|    GET   								|  PUT  		|  POST 	| DELETE  		|
+| :-------- 		| :-------------						| :--   		| :--   	| :--    		|
+| SURVEY			| /surveys 								|  - 			| -			| -  			|
+| SURVEY			| /survey{id} 							|  /survey/{id}	| /survey 	| /survey/{id}  |
+| USER 				| /user{id} (ANONYMOUS)  				| -  		  	|  -     	|     -   		|
+| USER 				| /user/1 (USER_AUTHENTICATED)  		| - 		  	|  -     	|     -   		|
+
