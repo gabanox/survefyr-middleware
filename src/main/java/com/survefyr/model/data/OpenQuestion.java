@@ -14,6 +14,9 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class OpenQuestion extends Question {
 	private String response;
 
+	public OpenQuestion(QuestionType questionType){
+		super.questionType = questionType;
+	}
 	private String getResponse() {
 		return response;
 	}

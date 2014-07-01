@@ -22,7 +22,8 @@ Documentación de la API
 | Recurso   		|    GET   								|  PUT  		|  POST 	| DELETE  		|
 | :-------- 		| :-------------						| :--   		| :--   	| :--    		|
 | SURVEY			| /surveys 								|  - 			| -			| -  			|
-| SURVEY			| /survey{id} 							|  /survey/{id}	| /survey 	| /survey/{id}  |
-| USER 				| /user{id} (ANONYMOUS)  				| -  		  	|  -     	|     -   		|
+| SURVEY			| /surveys/types						|  - 			| -			| -  			|
+| SURVEY			| /survey/{id} 							|  /survey/{id}	| /survey 	| /survey/{id}  |
+| USER 				| /user/{id} (ANONYMOUS)  				| -  		  	|  -     	|     -   		|
 | USER 				| /user/1 (USER_AUTHENTICATED)  		| - 		  	|  -     	|     -   		|
 

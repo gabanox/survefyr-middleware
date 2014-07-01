@@ -1,22 +1,34 @@
 package com.survefyr.model.data;
 
 
-import javax.xml.bind.annotation.XmlRootElement;
-
-import java.util.Calendar;
 import java.util.List;
-import java.util.TimeZone;
+
+import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class Question {
 	private Object questionDescription;
 	private List<QuestionItem> questionItems;
 	private List<QuestionItem> selectedQuestionItems;
-	private enum QuestionType {
+	protected QuestionType questionType;
+	public enum QuestionType {
 		LIKERT, 
 		SMILEY,
 		MULTIPLE,
 		OPEN
+	}
+	
+	public Question(){}
+	
+	public Question(QuestionType questionType){
+		this.questionType = questionType;
+	}
+	public void setQuestionType(QuestionType questionType){
+		this.questionType = questionType;
+	}
+	
+	public String getQuestionType(){
+		return this.questionType.toString();
 	}
 	
 	public Object getQuestionDescription() {
